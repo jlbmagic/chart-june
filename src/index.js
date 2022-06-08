@@ -1,9 +1,17 @@
-//Here we're importing items we'll need. You can add other imports here.
+import c3 from "c3";
 
-//The first function. Remove this.
-const btn = document.querySelector("button");
-btn.onclick = function () {
-  alert("You ran some JavaScript");
-};
-
-//
+var chart = c3.generate({
+  bindto: "#chart",
+  size: { width: 1000, height: 700 },
+  data: {
+    colors: {
+      Apples: "red",
+      Peaches: "green",
+    },
+    type: "bar",
+    columns: [
+      ["Apples", 300, 200, 100, 400, 350, 250],
+      ["Peaches", 10, 60, 210, 340, 415, 225],
+    ],
+  },
+});
