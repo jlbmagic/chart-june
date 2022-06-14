@@ -21,9 +21,9 @@ window.loadChart = function (param) {
         FileMaker.PerformScript("Get Data from JS", JSON.stringify(d));
       },
       colors: {
-        apples: "#F241A3",
-        peaches: "#020659",
-        bananas: "#EF27F2"
+        apples: "#F2C48D",
+        peaches: "#8C521F",
+        bananas: "#73604F"
       },
       type: type,
       keys: { x: "month", value: ["apples", "peaches", "bananas"] },
